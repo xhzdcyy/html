@@ -4,6 +4,16 @@
 <head>
     <title>我的网页</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="//at.alicdn.com/t/font_886212_yie1hffvkv9.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,20 +35,21 @@
         </nav>
     </div>
 
-    
-    <div class="banner">
 
+    <div class="banner">
+        <div class="mask"></div>
     </div>
     <main>
-        <div class="card">
-            <div class="text">
+        <div class="userCard">
+            <div class="picAndText clearfix">
                 <div class="pic">
-                    <img src="#" alt="头像">
+                    <img src="./avatar.jpg" width="299" height="347" alt="头像">
                 </div>
 
-                <div class="profile">
-                    <span class="welcome">Hello</span>
-                    <h1>name</h1>
+                <div class="text">
+                    <span class="welcome">Hello<span class="triangle"></span>
+                    </span>
+                    <h1>奚恒正</h1>
                     <p>前端开发工程师</p>
                     <hr>
                     <dl>
@@ -55,13 +66,22 @@
 
             </div>
             <footer class="media">
-                <a href="#"><img src="#" alt="..."></a>
-                <a href="#"><img src="#" alt="..."></a>
-                <a href="#"><img src="#" alt="..."></a>
-                <a href="#"><img src="#" alt="..."></a>
-                <a href="#"><img src="#" alt="..."></a>
-                <a href="#"><img src="#" alt="..."></a>
-                <a href="#"><img src="#" alt="..."></a>
+           
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-icontwiter"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weobo"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
             </footer>
 
         </div>
