@@ -3,7 +3,9 @@
 
 <head>
     <title>我的网页</title>
+    <link rel="stylesheet" href="./loading.css">
     <link rel="stylesheet" href="./style.css">
+
     <script src="//at.alicdn.com/t/font_886212_yie1hffvkv9.js"></script>
     <style type="text/css">
         .icon {
@@ -17,20 +19,40 @@
 </head>
 
 <body>
-    <div class="topNavBar clearfix">
+    <div id="websiteWelcome" class="website-welcome active">
+        <div class="loading ">
+        </div>
+    </div>
+
+    <div id="topNavBar" class="topNavBar clearfix">
         <a class="logo" href="#" alt="logo" style="float: left; ">
             <span class="rs">RS</span><span class="card">card</span>
         </a>
-        <nav>
+        <nav class="menu">
             <ul class="clearfix">
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">EXPERIENCE</a></li>
-                <li><a href="#">PRICING</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CALENDAR</a></li>
-                <li><a href="#">OTHER</a></li>
-                <li><a href="#">ALLDEMOS</a></li>
+                <li class="menuTigger"><a href="#siteAbout">关 于</a></li>
+                <li class="menuTigger"><a href="#siteSkills">技 能</a></li>
+
+                <li class="menuTigger">
+                    <a href="#siteWorks">作 品</a>
+                    <ul class="submenu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                </li>
+                <li class="menuTigger">
+                    <a href="#">博 客</a>
+                    <ul class="submenu">
+                        <li>博客1</li>
+                        <li>博客2</li>
+                        <li>博客3</li>
+                    </ul>
+                </li>
+                <li class="menuTigger"><a href="#">日 历</a></li>
+                <li class="menuTigger"><a href="#">联 系 方 式</a></li>
+                <li class="menuTigger"><a href="#">其 他</a></li>
+
             </ul>
         </nav>
     </div>
@@ -40,7 +62,7 @@
         <div class="mask"></div>
     </div>
     <main>
-        <div class="userCard">
+        <div id="siteAbout" class="userCard">
             <div class="picAndText clearfix">
                 <div class="pic">
                     <img src="./avatar.jpg" width="299" height="347" alt="头像">
@@ -99,7 +121,7 @@
     </main>
 
 
-    <section class="skills">
+    <section id="siteSkills" class="skills">
         <h2>技能</h2>
         <ol class="clearfix">
             <li>
@@ -154,7 +176,7 @@
         </ol>
     </section>
 
-    <section class="portfolio">
+    <section id="siteWorks" class="portfolio">
         <h2>作品集</h2>
         <nav>
             <ol class="clearfix">
@@ -194,6 +216,7 @@
         </div>
 
     </section>
+    <script src="loading.js"></script>
 
 </body>
 
