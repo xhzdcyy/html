@@ -3,19 +3,10 @@
 
 <head>
     <title>我的网页</title>
-    <link rel="stylesheet" href="./loading.css">
-    <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="//at.alicdn.com/t/font_886212_yie1hffvkv9.js"></script>
-    <style type="text/css">
-        .icon {
-            width: 1em;
-            height: 1em;
-            vertical-align: -0.15em;
-            fill: currentColor;
-            overflow: hidden;
-        }
-    </style>
 </head>
 
 <body>
@@ -24,7 +15,7 @@
         </div>
     </div>
 
-    <div  id="topNavBar" class="topNavBar clearfix">
+    <div id="topNavBar" class="topNavBar clearfix">
         <a class="logo" href="#" alt="logo" style="float: left; ">
             <span class="rs">RS</span><span class="card">card</span>
         </a>
@@ -58,6 +49,8 @@
     </div>
 
 
+
+
     <div class="banner">
         <div class="mask"></div>
     </div>
@@ -65,7 +58,7 @@
         <div data-x id="siteAbout" class="userCard">
             <div class="picAndText clearfix">
                 <div class="pic">
-                    <img src="./avatar.jpg" width="299" height="347" alt="头像">
+                    <img src="./img/avatar.jpg" width="299" height="347" alt="头像">
                 </div>
 
                 <div class="text">
@@ -203,21 +196,44 @@
 
         </script>
 
-        <div class="works" style="height:597px">
-            <div class="big" style="top: 0; left: 0;">
-                <img src="./1.jpg" alt="作品1">
+
+        <div  class="swiper-container" id="mySlides">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide" src="./img/bookmark.jpg" alt="书签" width="1000px" height="600px">
+                <img class="swiper-slide" src="./img/lb.jpg" alt="轮播" width="1000px" height="600px">
+                <img class="swiper-slide" src="./img/canvas.jpg" alt="画板" width="1000px" height="600px">
             </div>
-            <div class="small" style="top: 0; left: 645px;">
-                <img src="./2.jpg" alt="作品2">
-            </div>
-            <div class="small" style="top: 312px; left: 645px;">
-                <img src="./3.jpg" alt="作品3">
-            </div>
+
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
         </div>
 
     </section>
-    <script src="loading.js"></script>
 
+    <section class="message">
+        <h2>留言</h2>
+        <ol id="messageList"></ol>
+        <form action="" id="postMessageForm">
+            <input type="text" name="name" id="">
+            <input type="text" name="content" id="">
+            <input type="submit" value="提交">
+        </form>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.10.0/dist/av-min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-realtime@4.2.0/dist/realtime.browser.min.js"></script>
+
+    <script src="./js/loading.js"></script>
+    <script src="./js/auto-slide-up.js"></script>
+    <script src="./js/sticky-topbar.js"></script>
+    <script src="./js/smoothy-navigation.js"></script>
+    <script src="./js/init-swiper.js"></script>
+    <script src="./js/message.js"></script>
+    
 </body>
 
 </html>

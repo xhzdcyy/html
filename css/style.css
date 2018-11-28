@@ -101,7 +101,7 @@ transition: all 0.5s;z-index: 1;color: #b7b7b7;
 .topNavBar .logo { font-size: 24px; font-family: "Arial Black"; padding: 3px 0 4px; }
 .topNavBar .logo .rs{ color: #e6686a; margin-right: 12px; }
 .topNavBar .logo .card{ color: #9a9da2; }
-.banner{ height: 515px; background-image: url(./rs-cover.jpg); background-position: center center; background-size: cover; }
+.banner{ height: 515px; background-image: url(../img/rs-cover.jpg); background-position: center center; background-size: cover; }
 .banner .mask{ height: 515px; background-color: rgba(0,0,0,0.8); }
 
 .userCard{ max-width: 940px; margin: 0 auto; background-color: #fff; box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5); }
@@ -127,7 +127,7 @@ body > main .downloadResume:hover{ box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.2);
 .selfIntroduction{ max-width: 940px; margin: 0 auto; text-align: center; font-size: 18px; font-family: kai; }
 
 section.skills, section.portfolio{ max-width: 940px; margin: 60px auto 0; }
-section.skills>h2, section.portfolio>h2{ text-align: center; color: #3d4451; font-size: 34px; line-height: 1.2; font-weight: 600; }
+section.message>h2,section.skills>h2, section.portfolio>h2{ text-align: center; color: #3d4451; font-size: 34px; line-height: 1.2; font-weight: 600; }
 section.skills h3{ font-size: 14px; line-height: 1.1; padding-right: 40px; }
 section.skills>ol{ background: #fff; box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5); padding: 42px 50px 10px; margin-top: 30px; }
 section.skills>ol>li{ float: left; width: 50%; box-sizing: border-box; }
@@ -151,3 +151,41 @@ section.portfolio>nav>.bar.state-2>.bar-inner{ width: 50px; margin-left: 65px; t
 section.portfolio>nav>.bar.state-3>.bar-inner{ width: 96px; margin-left: 140px; transition: all 0.3s; }
 section.portfolio .works{ position: relative; margin-bottom: 100px; }
 section.portfolio .works>.big, section.portfolio .works>.small{ position: absolute; }
+
+
+.swiper-container {
+    width: 1000px;
+    height: 600px;
+}  
+.swiper-slide{
+    background: #fff;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+
+#postMessageForm{
+    width: 700px;
+    margin: 50px auto;
+
+}
+
+
+section.message>h2{
+    margin: 50px 0; 
+}
+section.message>ol{
+    margin: 0 auto;
+    max-width: 700px;
+    border-top: 1px solid #ddd;
+    background: #f4f4f4;
+}
+section.message>ol>li{
+    padding: 16px 0;
+    border-bottom: 1px solid #ddd;
+}
